@@ -1,0 +1,12 @@
+{
+  "name": "js-form-builder",
+  "version": "0.0.1",
+  "description": "Helps you create a form builder in your JS project",
+  "main": "src/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JosKariuki",
+  "license": "ISC"
+}
