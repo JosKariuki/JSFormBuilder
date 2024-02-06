@@ -30,7 +30,7 @@ class FormBuilder {
     styleTag.innerHTML = Object.entries(styles)
       .map(
         ([property, value]) =>
-          `.${this.elementSelector} ${property} { ${value} }`
+          `.${this.elementSelector} { ${property}: ${value}; }`
       )
       .join("\n");
     document.head.appendChild(styleTag);
@@ -113,11 +113,6 @@ class FormBuilder {
   generateJSON() {
     const jsonOutput = JSON.stringify(this.formConfig, null, 2);
     console.log(jsonOutput);
-    // You can also display the JSON in an alert or update an element in the HTML with the JSON data.
-  }
-
-  static initial_func() {
-    return 4232312;
   }
 }
 
